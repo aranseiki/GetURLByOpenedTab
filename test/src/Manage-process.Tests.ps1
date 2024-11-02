@@ -1,10 +1,8 @@
 # Import the Pester module
 Import-Module Pester -RequiredVersion 5.6.1
 
-BeforeAll {
-    # Load the code file into the test environment
-    . ./../src/GetURLByOpenedTab.ps1
-}
+# Load the code file into the test environment
+Import-Module .\src\Manage-process.psm1
 
 Describe "Testing for Get-BrowserInstance function" {
 

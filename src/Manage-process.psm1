@@ -1,8 +1,3 @@
-Clear-Host
-
-# Carregar o assembly necessário
-Add-Type -AssemblyName UIAutomationClient
-
 function Get-BrowserInstance {
     param (
         [string]$ProcessName
@@ -11,3 +6,5 @@ function Get-BrowserInstance {
     # Retorna a instância do Edge
     return Get-Process -Name $ProcessName -ErrorAction Stop
 }
+
+Export-ModuleMember -Function Get-BrowserInstance
