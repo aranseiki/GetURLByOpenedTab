@@ -1,7 +1,7 @@
 # Behavior Specification for `Get-BrowserInstance` function.
 
 ## Description
-This specification details the expected behavior of the `Get-BrowserInstance` function, which searches for instances of a specific running browser and returns only those with an active window.
+This specification details the expected behavior of the `Get-BrowserInstance` function, which searches for instances of a specific running browser and returns a browser window instance.
 
 ---
 
